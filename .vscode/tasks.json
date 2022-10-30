@@ -2,8 +2,8 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Get Escaped File",
-			"command": "/Users/maxludden/dev/venvs/maxsetup/bin/python /Users/maxludden/dev/py/maxsetup/tasks/compress.py",
+			"label": "Setup Files",
+			"command": "/Users/maxludden/dev/venvs/maxsetup/bin/python /Users/maxludden/dev/py/maxsetup/setup_files.py",
 			"type": "shell",
 			"group": {
 				"kind": "none",

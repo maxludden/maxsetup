@@ -13,6 +13,7 @@ typer = {extras = ["all"], version = "^0.6.1"}
 pyaml = "^21.10.1"
 ujson = "^5.5.0"
 alive-progress = "^2.4.1"
+requests = "^2.28.1"
 
 
 [tool.poetry.group.dev.dependencies]
