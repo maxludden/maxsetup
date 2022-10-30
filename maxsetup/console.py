@@ -1,5 +1,6 @@
 # /maxsetup/console.py
 
+from turtle import bgcolor
 from typing import Optional, List
 from inspect import getframeinfo, currentframe
 
@@ -7,6 +8,7 @@ from rich.text import Text
 from rich.color import Color
 from rich.console import Console
 from rich.panel import Panel
+from rich.style import Style
 from rich.progress import (
     BarColumn,
     MofNCompleteColumn,
@@ -111,15 +113,15 @@ theme = Theme(theme_dict)
 text_column = TextColumn("[progress.description]{task.description}")
 spinner_column = SpinnerColumn(
     spinner_name="point",
-    style=blue_violet,
-    finished_text=Text(f"[green]✓[/green]"),
+    style="yellow",
+    finished_text=Text("✓", style="green"),
     table_column=Column(),
 )
 bar_column = BarColumn(
     bar_width=None,  # Full width progress bar
-    style=cornflower_blue,  # While in-progress
-    complete_style=f"bold reverse {green}",  # Done
-    finished_style="dark_grey",  # After completion
+    style=Style(color="cornflower_blue", bgcolor="cornflower_blue"),  # While in-progress
+    complete_style=Style(color="green", bgcolor="green"),  # Done
+    finished_style=Style(color="green", bgcolor="#333333"),  # After completion
     table_column=Column(ratio=3),
 )
 mofn_column = MofNCompleteColumn()

@@ -8,13 +8,14 @@ from time import perf_counter
 from typing import List, Optional
 
 import ujson as json
-from loguru import Logger
 from loguru import logger as log
+# from loguru import Logger
 from maxsetup.console import console, progress
 from maxsetup.setup_files import make_files
 from sh import Command
 
 """This script is used to provide a simple interface to the loguru library based on the standard `logging` library."""
+
 
 class DirectoryNotFound(FileNotFoundError):
     pass
