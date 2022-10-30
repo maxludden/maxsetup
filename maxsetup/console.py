@@ -149,7 +149,7 @@ class MaxConsole(Console):
         self.theme = theme
 
         # Custom Console
-        console = Console(theme=theme, color_system="truecolor")
+        console = Console(theme=theme, color_system="truecolor", tab_size=4)
         install_rich_traceback(console=console, show_locals=True)
         self.console = console
 
