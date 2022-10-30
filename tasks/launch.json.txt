@@ -1,0 +1,1 @@
+{\n\t\"version\": \"0.2.0\",\n\t\"configurations\": [\n\t\t{\n\t\t\t\"name\": \"Python: Current File\",\n\t\t\t\"type\": \"python\",\n\t\t\t\"request\": \"launch\",\n\t\t\t\"program\": \"${file}\",\n\t\t\t\"console\": \"integratedTerminal\",\n\t\t\t\"justMyCode\": true\n\t\t}\n\t]\n}
