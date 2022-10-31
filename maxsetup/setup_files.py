@@ -76,7 +76,7 @@ FILES = [
         "file": "cspell.txt",
         "type": "text",
         "filepath": f"{BASE}/config/cspell.txt",
-        "content": """CKRE\nhhyfx\nkxoynn\nMenlo\nTize\nudvr\nykexju\n""",
+        "content": "adipisicing\naliqua\naliquip\namet\naute\nAute\ncillum\nCKRE\ncommodo\nconsectetur\nConsectetur\nconsequat\ncupidatat\nCupidatat\ndeserunt\ndolore\nduis\neiusmod\nEiusmod\nelit\nexcepteur\nfugiat\nFugiat\ngradiented\nhhyfx\nincididunt\nirure\nkxoynn\nlabore\nlaboris\nlaborum\nMenlo\nmollit\nnostrud\nnulla\noccaecat\nofficia\npariatur\nproident\nquis\nrainbowed\nRenderable\nsunt\nSunt\ntempor\nTize\nudvr\nullamco\nvelit\nveniam\nvoluptate\nVoluptate\nykexju\n",
     },
     {
         "file": "run.txt",
@@ -169,7 +169,9 @@ def get_fonts():
     copy = Command("cp")
     master = "/Users/maxludden/dev/custom/fonts"
     with progress:
-        write_fonts = progress.add_task(description="Copying Fonts...", total=len(FONTS))
+        write_fonts = progress.add_task(
+            description="Copying Fonts...", total=len(FONTS)
+        )
         for font in FONTS:
             copy(f"{master}/{font}", f"{BASE}/fonts")
             progress.update(write_fonts, advance=1, description=f"Copying {font}.")
@@ -193,7 +195,9 @@ def make_files() -> None:
         if not directory.exists():
             directory.mkdir()
     with progress:
-        write_files = progress.add_task(description="Creating Files...", total=len(FILES))
+        write_files = progress.add_task(
+            description="Creating Files...", total=len(FILES)
+        )
         for file in FILES:
             path = Path(file["filepath"])
             if not path.exists():
@@ -204,11 +208,17 @@ def make_files() -> None:
                     outfile.write(content)
                 # console.print(created_file_panel(name, file["filepath"]))
                 filename = file["file"]
-                progress.update(write_files, advance=1, description=f"Created {filename}.")
+                progress.update(
+                    write_files, advance=1, description=f"Created {filename}."
+                )
 
             else:
                 filename = file["file"]
-                progress.update(write_files, advance=1, description=f"Skipped {filename} as it already existed.")
+                progress.update(
+                    write_files,
+                    advance=1,
+                    description=f"Skipped {filename} as it already existed.",
+                )
 
     get_fonts()
 
