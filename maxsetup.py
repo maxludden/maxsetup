@@ -174,4 +174,4 @@ def setup() -> dict:
     console.clear()
     console.rule(gradient_run, style="bold bright_white")
 
-    return {"run": run, "console": console, "progress": progress, "log": log}
+    return log
