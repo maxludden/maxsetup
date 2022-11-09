@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "maxsetup"
-version = "0..0"
+version = "0.4.0"
 description = "This is a module that automates the file structure and settings of a new project."
 authors = ["Max Ludden <dev@maxludden.com>"]
 readme = "README.md"
@@ -14,7 +14,6 @@ max-yaml = "^0.1.0"
 maxconsole = "^0.4.0"
 maxprogress = "^0.4.0"
 maxcolor = "^1.0.0"
-template = {path = "../../template", develop = false}
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.10.0"

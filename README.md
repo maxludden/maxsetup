@@ -14,7 +14,7 @@ This is a module that automates the file structure and settings of a new project
 
 ## Changes from v0.3.0
 
-Add path dependency to the config file.
+Updated module configuration.
 
 ## Installation
 
