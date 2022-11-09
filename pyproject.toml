@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "maxsetup"
-version = "0.1.0"
+version = "0.3.0"
 description = ""
 authors = ["Max Ludden <dev@maxludden.com>"]
 readme = "README.md"
@@ -9,12 +9,15 @@ readme = "README.md"
 python = "^3.10"
 rich = "^12.6.0"
 loguru = "^0.6.0"
-typer = {extras = ["all"], version = "^0.6.1"}
+typer = { extras = ["all"], version = "^0.6.1" }
 pyaml = "^21.10.1"
 ujson = "^5.5.0"
 alive-progress = "^2.4.1"
 requests = "^2.28.1"
-
+max-yaml = "^0.1.0"
+maxconsole = "^0.4.0"
+maxprogress = "^0.4.0"
+maxcolor = "^1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.10.0"

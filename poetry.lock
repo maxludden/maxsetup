@@ -347,6 +347,53 @@ python-versions = ">=3.5"
 traitlets = "*"
 
 [[package]]
+name = "max-yaml"
+version = "0.1.0"
+description = "Creates dump, dumps, load, and load function for yaml doc based on the json stdlib."
+category = "main"
+optional = false
+python-versions = ">=3.10,<4.0"
+
+[package.dependencies]
+maxconsole = ">=0.4.0,<0.5.0"
+pyaml = ">=21.10.1,<22.0.0"
+
+[[package]]
+name = "maxcolor"
+version = "1.0.0"
+description = "A module to genereate gradient text and rich panels."
+category = "main"
+optional = false
+python-versions = ">=3.10,<4.0"
+
+[package.dependencies]
+maxconsole = ">=0.4.0,<0.5.0"
+rich = ">=12.6.0,<13.0.0"
+
+[[package]]
+name = "maxconsole"
+version = "0.4.0"
+description = "Themed Rich Conosle"
+category = "main"
+optional = false
+python-versions = ">=3.10,<4.0"
+
+[package.dependencies]
+rich = ">=12.6.0,<13.0.0"
+
+[[package]]
+name = "maxprogress"
+version = "0.4.0"
+description = "A customized Rich Progress Bar"
+category = "main"
+optional = false
+python-versions = ">=3.10,<4.0"
+
+[package.dependencies]
+maxconsole = ">=0.4.0,<0.5.0"
+rich = ">=12.6.0,<13.0.0"
+
+[[package]]
 name = "mypy-extensions"
 version = "0.4.3"
 description = "Experimental type system extensions for programs checked with the mypy typechecker."
@@ -717,7 +764,7 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "dcfa17d9e11149183f5c5f179d3814fd64db67d0a46fc1700926845dc7571cac"
+content-hash = "aeb385804664ed3fbc9f1bd6ab23fb3e669c52055fe5d5c328774236396a7b34"
 
 [metadata.files]
 about-time = [
@@ -923,6 +970,22 @@ loguru = [
 matplotlib-inline = [
     {file = "matplotlib-inline-0.1.6.tar.gz", hash = "sha256:f887e5f10ba98e8d2b150ddcf4702c1e5f8b3a20005eb0f74bfdbd360ee6f304"},
     {file = "matplotlib_inline-0.1.6-py3-none-any.whl", hash = "sha256:f1f41aab5328aa5aaea9b16d083b128102f8712542f819fe7e6a420ff581b311"},
+]
+max-yaml = [
+    {file = "max_yaml-0.1.0-py3-none-any.whl", hash = "sha256:40eec140237054f70ef900d9d1fa10224196c32e1414f3b1a5b7361945f6090b"},
+    {file = "max_yaml-0.1.0.tar.gz", hash = "sha256:b5b9dde9b2926b01b1fec7d6da730abea19e75689d96953e00e85bc0af06ab34"},
+]
+maxcolor = [
+    {file = "maxcolor-1.0.0-py3-none-any.whl", hash = "sha256:4eb815ca7aaa683213ba946bdbee875a07465a13d6d81e2678f81c8cdde0f872"},
+    {file = "maxcolor-1.0.0.tar.gz", hash = "sha256:9a5e7e30e2400aa37edac67f1460d8cc3bb91cc0551843b2989b3fa6d540fed6"},
+]
+maxconsole = [
+    {file = "maxconsole-0.4.0-py3-none-any.whl", hash = "sha256:74db7f104fae1f838f0e392c4a88ea343e2579bc0f35f223904cc486210eeb27"},
+    {file = "maxconsole-0.4.0.tar.gz", hash = "sha256:1fe67978875d7ed770e4318df980875d826dcb22adb6641f46f57881475c5c9c"},
+]
+maxprogress = [
+    {file = "maxprogress-0.4.0-py3-none-any.whl", hash = "sha256:ec560cec5f998d9855a4bd0778fc4d6cc73e1b409f3ddc76a8cae798c8e1760a"},
+    {file = "maxprogress-0.4.0.tar.gz", hash = "sha256:d1718602e708d6a3a14c711447f484c4d311a53d49c0e63fe621a725b03e67c1"},
 ]
 mypy-extensions = [
     {file = "mypy_extensions-0.4.3-py2.py3-none-any.whl", hash = "sha256:090fedd75945a69ae91ce1303b5824f428daf5a028d2f6ab8a299250a846f15d"},
