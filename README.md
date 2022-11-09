@@ -6,7 +6,9 @@ Date: 2022-11-22
 CSS: static/style.css
 ...
 
-# MaxSetup v0.4.0
+# MaxSetup v0.5.0
+
+Changed setup to return only "log"
 
 ## Purpose
 
