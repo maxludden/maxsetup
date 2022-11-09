@@ -6,13 +6,15 @@ Date: 2022-11-22
 CSS: static/style.css
 ...
 
-# MaxSetup v0.3.0
+# MaxSetup v0.4.0
 
 ## Purpose
 
 This is a module that automates the file structure and settings of a new project.
 
+## Changes from v0.3.0
 
+Add path dependency to the config file.
 
 ## Installation
 

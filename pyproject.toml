@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "maxsetup"
-version = "0.3.0"
-description = ""
+version = "0..0"
+description = "This is a module that automates the file structure and settings of a new project."
 authors = ["Max Ludden <dev@maxludden.com>"]
 readme = "README.md"
 
@@ -9,20 +9,20 @@ readme = "README.md"
 python = "^3.10"
 rich = "^12.6.0"
 loguru = "^0.6.0"
-typer = { extras = ["all"], version = "^0.6.1" }
-pyaml = "^21.10.1"
 ujson = "^5.5.0"
-alive-progress = "^2.4.1"
-requests = "^2.28.1"
 max-yaml = "^0.1.0"
 maxconsole = "^0.4.0"
 maxprogress = "^0.4.0"
 maxcolor = "^1.0.0"
+template = {path = "../../template", develop = false}
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.10.0"
 ipython = "^8.5.0"
 ipywidgets = "^8.0.2"
+
+[tool.poetry.scripts]
+maxconsole = 'maxconsole:main'
 
 [build-system]
 requires = ["poetry-core"]
