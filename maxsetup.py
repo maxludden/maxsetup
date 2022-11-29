@@ -14,7 +14,7 @@ from maxprogress import get_progress
 from rich.console import Console
 from rich.traceback import install as install_rich_traceback
 
-__version__ = '0.6.0'
+__version__ = '0.7.0'
 
 console = get_console(get_theme())
 progress = get_progress(console)
