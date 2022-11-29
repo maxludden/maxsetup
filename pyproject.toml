@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "maxsetup"
-version = "0.6.0"
+version = "0.7.0"
 description = "This is a module that automates the file structure and settings of a new project."
 authors = ["Max Ludden <dev@maxludden.com>"]
 readme = "README.md"
